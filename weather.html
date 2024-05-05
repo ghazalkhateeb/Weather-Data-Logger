@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather for {{ location }}</title>
+</head>
+<body>
+    <h1>Weather for {{ location }}</h1>
+
+    <h2>Weather Data:</h2>
+    <p>Temperature: {{ weather_data.main.temp }} °C</p>
+    <p>Humidity: {{ weather_data.main.humidity }} %</p>
+    <p>Wind Speed: {{ weather_data.wind.speed }} m/s</p>
+
+    <h2>Weather Graph:</h2>
+    <img src="data:image/png;base64,{{ graph_image }}" alt="Weather Graph">
+
+    <form action="/home" method="get">
+        <button type="submit">Get back home</button>
+    </form>
+</body>
+</html>
