@@ -1,4 +1,4 @@
-# Weather Data Logger
+## Weather Data Logger
 
 1-please note that the code has an in-depth explanation about the functionalities of each method (in comments).
 
